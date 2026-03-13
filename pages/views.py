@@ -20,6 +20,3 @@ def excorx(request):
     return render(request, 'ExCoreX.html')
 
 
-
-def redirect_all(request, exception=None):
-    return redirect('/')
