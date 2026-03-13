@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import LoginModel
+from django.shortcuts import redirect
 
 def excorx(request):
     if request.method == 'GET':
@@ -17,3 +18,8 @@ def excorx(request):
                 # If the user is not found, you can render an error page or show a message
                 pass
     return render(request, 'ExCoreX.html')
+
+
+
+def redirect_all(request, exception=None):
+    return redirect('/')
